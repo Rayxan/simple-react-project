@@ -1,23 +1,22 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
 
-  const name = 'raylenda'
-  const updatedName = name.toUpperCase()
-
-  function soma(a,b) {
-    return a + b
-  }
-
-  const url = 'https://via.placeholder.com/150'
+  const name = "Ana"
 
   return (
     <div className="App">
-      <h1>Meu nome é {updatedName}</h1>
-      <p>{soma(1,3)}</p>
-      <img src={url} alt="Minha imagem"></img>
-      <HelloWorld/>
+      {/* <HelloWorld/> */}
+      <SayMyName name="Raylenda"/>
+      <SayMyName name="Matheus"/>
+      <SayMyName name={name}/>
+      <Pessoa nome="RaylendaGamer" 
+        idade="27" 
+        profissao="Programador" 
+        foto="https://via.placeholder.com/150"/>
     </div>
   );
 }
