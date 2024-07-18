@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <h1>Meu nome é {updatedName}</h1>
       <p>{soma(1,3)}</p>
       <img src={url} alt="Minha imagem"></img>
+      <HelloWorld/>
     </div>
   );
 }
